@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>Media Gallery</title>
+      <title>Media Gallery</title>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"><!-- font awesome CDN -->
+      <link rel="stylesheet" href="css/sanitize.css">
+      <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <nav>
-
+        <nav id="main-nav" class="topnav">
+          <a class="nav-item">
+            <span class="label"><i class="fas fa-arrow-circle-up"></i>Upload</span>
+          </a>
+          <a class="nav-item">
+            <span class="label"><i class="fas fa-info-circle"></i>Info</span>
+          </a>
+          <a class="nav-item">
+            <span class="label"><i class="fas fa-quote-left"></i>Credits</span>
+          </a>
+          <a class="nav-item">
+            <span class="label"><i class="fas fa-ellipsis-h"></i>More</span>
+          </a>
         </nav>
 
        <div class="flex-container">
             <div class="slideshow">
                 <div class="slide fade">
                     <img src="Images\ccimage-shutterstock_1081125704.jpg"/>
-                    <div class="captiontext">A beautiful view of it.</div>
-                  </div>
-            </div>
-       </div> 
+                    <div class="captiontext">Image1</div>
+                  </div><!-- end .slide.fade -->
+                  <div class="slide fade">
+                    <img src="Images\Fireboat%2B-%2BCorncob.jpg"/>
+                    <div class="captiontext">Image2</div>
+                  </div><!-- end .slide.fade -->
+            </div><!-- end .slideshow -->
+       </div><!-- end .flex-container -->
         
+
+
+       <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+    <script src="js/page.js" type="text/javascript"></script>
     </body>
