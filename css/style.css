@@ -1,0 +1,39 @@
+:root {/*-- Sets color variables --*/
+    --white: #FBFBF8;
+    --blue: #4DA1A9;
+    --red: #EE2E31;
+    --text: black;
+  }
+  body { /*-- Sets body defaults --*/
+    padding: .25rem;
+    font-size: 18px;
+    color: var(--text);
+    background-color: var(--white);
+    width: 98%;
+    margin: 0 auto;
+  }
+
+.topnav { /*-- main navigation element --*/
+    margin-top: -.25rem; /*-- uses negative margin to pull menu to top --*/
+    padding-bottom: .5rem; /*-- creates a little space below nav --*/
+    background-color: var(--blue);
+    display: flex; /*-- creates a flex container --*/
+    flex-direction: row; /*-- direction is for MOBILE screen sizes --*/
+    justify-content: space-around; /*-- lays out menu items--*/
+    align-content: center; /*-- vertically aligns menu items to center --*/
+    z-index: 1000; /*-- makes navbar always sit in the front, on the z-axis--*/
+    width: 100%; /*-- makes navbar occupy full width of the body --*/
+  }
+  a.nav-item {
+    position: relative; /*-- overcomes negative margin in above rule --*/
+    top: 4px; /*-- tweaks vertical position --*/
+    text-align: center; /*-- center-aligns all text inside their boxes --*/
+    padding: .75em 0; /*-- provides padding inside menu items --*/
+    margin: auto 0; /*-- centers menu text vertically --*/
+    color: var(-text);
+    transition: color 250ms ease-in-out; /*-- specifies transition, duration, and easing --*/
+  }
+  a.nav-item:hover {
+    color: var(--red);
+    cursor: pointer; /*-- changes menu items to pointer on hover --*/
+  }
