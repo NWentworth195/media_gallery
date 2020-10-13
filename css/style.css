@@ -47,14 +47,14 @@
   .right-half {
     position: absolute;
     right: 0px;
-    width: 50%;
+    width: 100%;
   }
   
   .main-grid {
     margin-top: 3.5rem; /*-- adds space above grid wrap --*/
     display: grid; /*-- sets display mode --*/
     grid-gap: 1.5rem; /*-- creates gutters --*/
-    grid-template-columns: 1fr; /*-- default mobile layout is 1-column--*/
+    grid-template-columns: 2fr; /*-- default mobile layout is 1-column--*/
   }
 
   .main-grid-item {
@@ -73,3 +73,5 @@
   /*-- Card Backgrounds --*/
   .one .thumb {background-image: url("../Images/WD20190627-RiverRoastPrivateEvents-11.jpeg");
   background-size: auto;}
+  .two .thumb {background-image: url("../Images/trade-819x1024.jpg");
+    background-size: auto;}
