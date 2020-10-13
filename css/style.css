@@ -37,3 +37,39 @@
     color: var(--red);
     cursor: pointer; /*-- changes menu items to pointer on hover --*/
   }
+
+  .left-half {
+    position: absolute;
+    left: 0px;
+    width: 50%;
+  }
+
+  .right-half {
+    position: absolute;
+    right: 0px;
+    width: 50%;
+  }
+  
+  .main-grid {
+    margin-top: 3.5rem; /*-- adds space above grid wrap --*/
+    display: grid; /*-- sets display mode --*/
+    grid-gap: 1.5rem; /*-- creates gutters --*/
+    grid-template-columns: 1fr; /*-- default mobile layout is 1-column--*/
+  }
+
+  .main-grid-item {
+    width: 25%;
+    height: 100%;
+    border-radius: 4px;  /*-- rounds borders --*/
+    padding: .5em; /*-- adds space inside --*/
+    background-color: var(--blue);
+  }
+  .thumb {
+    padding-bottom: 56%; /*-- creates ~16:9 ratio--*/
+    background-size: cover; /*--sets image to cover background --*/
+    background-position: center center; /*-- positions image horiz. and vert. center --*/
+    border-radius: 4px 4px 0 0; /*-- rounds top-left and top-right edges --*/
+  }
+  /*-- Card Backgrounds --*/
+  .one .thumb {background-image: url("../Images/WD20190627-RiverRoastPrivateEvents-11.jpeg");
+  background-size: auto;}
