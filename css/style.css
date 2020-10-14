@@ -39,15 +39,14 @@
   }
 
   .left-half {
-    position: absolute;
-    left: 0px;
+    position: static;
     width: 50%;
   }
 
   .right-half {
-    position: absolute;
+    position: relative;
     right: 0px;
-    width: 100%;
+    width: 50%;
   }
   
   .main-grid {
