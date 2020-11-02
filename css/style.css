@@ -45,6 +45,10 @@
 
   }
 
+  .text-center{
+    visibility: hidden;
+  }
+
   .left-half {
     grid-area: slideshow;
   }
